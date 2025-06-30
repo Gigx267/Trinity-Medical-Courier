@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Trinity Medical Courier | Healthcare Logistics Experts</title>
+    <meta name="description" content="Learn about Trinity Medical Courier's pharmaceutical industry expertise and commitment to secure, compliant medical transport solutions.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* --- Modern Color Scheme and Design Optimization --- */
+        :root {
+             --primary: #dc3545; /* Professional blue */
+            --primary-dark: #dc3545 ;
+            --primary-light: #e6f0ff;
+            --accent: #00a0e1; /* Complementary blue */
+            --dark: #1a1a1a;
+            --dark-light: #2d2d2d;
+            --text: #4a4a4a;
+            --text-light: #ffffff;
+            --text-lighter: #f8f9fa;
+            --border: #e0e0e0;
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 24px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --transition-slow: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        *, *::before, *::after { box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: #fff;
+            line-height: 1.6;
+            font-size: 16px;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        h1 { font-size: 2.8rem; }
+        h2 { font-size: 2.2rem; }
+        h3 { font-size: 1.7rem; }
+        h4 { font-size: 1.3rem; }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+        a { color: var(--primary); text-decoration: none; transition: var(--transition);}
+        a:hover { color: var(--primary-dark);}
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+        
+        .section-title {
+            display: inline-block; 
+            color: var(--primary); 
+            font-size: 0.9rem; 
+            font-weight: 700;
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            margin-bottom: 1.5rem; 
+            padding: 0.6rem 1.2rem;
+            background: var(--primary-light); 
+            border-radius: 50px;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0; left: 0; width: 100%; z-index: 1000;
+            background: rgba(255,255,255,0.98);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            backdrop-filter: blur(8px);
+        }
+        
+        header.hide { transform: translateY(-100%);}
+        
+        .header-container {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            height: 80px;
+        }
+        
+        .logo {
+            display: flex; 
+            align-items: center; 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: var(--dark);
+        }
+        
+        .logo-icon {
+            width: 40px; 
+            height: 40px; 
+            background: var(--primary);
+            color: #fff; 
+            border-radius: var(--radius-sm);
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            margin-right: 0.8rem; 
+            font-size: 1.3rem; 
+            transition: var(--transition);
+        }
+        
+        .logo:hover .logo-icon { 
+            transform: rotate(15deg); 
+            background: var(--accent); 
+        }
+        
+        .logo span { color: var(--primary);}
+        
+        .logo-tagline { 
+            display: block; 
+            font-size: 0.75rem; 
+            color: var(--text); 
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Navigation */
+        .desktop-nav { display: flex; align-items: center;}
+        
+        .nav-links { 
+            display: flex; 
+            list-style: none; 
+            margin-right: 2rem;
+            gap: 1.5rem;
+        }
+        
+        .nav-links a { 
+            color: var(--dark); 
+            font-weight: 500; 
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: ""; 
+            display: block; 
+            height: 2px; 
+            width: 0;
+            background: var(--primary); 
+            transition: var(--transition);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .nav-links a:hover::after { width: 100%;}
+        
+        .btn { 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+            padding: 0.8rem 2.2rem; 
+            font-weight: 600; 
+            border-radius: var(--radius-md);
+            border: none; 
+            cursor: pointer; 
+            text-align: center; 
+            transition: var(--transition);
+            background: none;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary); 
+            color: #fff; 
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .btn-primary:hover { 
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-outline {
+            color: var(--primary); 
+            border: 2px solid var(--primary); 
+            background: transparent;
+        }
+        
+        .btn-outline:hover { 
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+        
+        .btn-lg { 
+            padding: 1.1rem 2.8rem; 
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        /* Mobile Nav */
+        .mobile-nav-btn {
+            display: none; 
+            background: none; 
+            border: none; 
+            color: var(--dark); 
+            font-size: 1.7rem; 
+            cursor: pointer;
+            z-index: 1002;
+        }
+        
+        .mobile-nav { 
+            position: fixed; 
+            top: 0; 
+            right: -100%; 
+            width: 300px; 
+            height: 100vh;
+            background: #fff; 
+            box-shadow: -5px 0 25px rgba(0,0,0,0.1); 
+            z-index: 1001;
+            transition: right .4s cubic-bezier(0.16, 1, 0.3, 1); 
+            padding: 6rem 2rem 3rem;
+            overflow-y: auto;
+        }
+        
+        .mobile-nav.active { right: 0;}
+        
+        .mobile-nav-links { 
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .mobile-nav-links a { 
+            color: var(--dark); 
+            font-weight: 600; 
+            font-size: 1.1rem; 
+            display: block;
+            padding: 0.5rem 0;
+        }
+        
+        .mobile-nav-links a:hover { color: var(--primary);}
+        
+        .nav-overlay {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background: rgba(0,0,0,0.5); 
+            z-index: 1000;
+            opacity: 0; 
+            visibility: hidden; 
+            transition: var(--transition);
+            backdrop-filter: blur(3px);
+        }
+        
+        .nav-overlay.active { opacity: 1; visibility: visible;}
+        
+        /* Hero Section */
+        .hero {
+            height: 90vh; 
+            min-height: 650px; 
+            display: flex; 
+            align-items: center; 
+            color: white;
+            text-align: center; 
+            position: relative; 
+            overflow: hidden; 
+            padding-top: 80px;
+        }
+        
+        .hero-bg {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            z-index: -2;
+        }
+        
+        .hero-bg video, .hero-bg img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+        }
+        
+        .hero-overlay {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,102,204, 0.85) 0%, rgba(0,160,225, 0.75) 100%);
+            z-index: -1;
+        }
+        
+        .hero-content { 
+            position: relative; 
+            max-width: 800px; 
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero-title { 
+            font-size: 3rem; 
+            color: #fff; 
+            margin-bottom: 1.5rem; 
+            line-height: 1.1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .hero-subtitle { 
+            font-size: 1.3rem; 
+            font-weight: 400; 
+            color: rgba(255,255,255,0.9); 
+            margin-bottom: 2.5rem;
+        }
+        
+        .hero-buttons { 
+            display: flex; 
+            gap: 1.2rem; 
+            justify-content: center; 
+            margin-bottom: 2rem;
+        }
+        
+        .hero-scroll { 
+            position: absolute; 
+            bottom: 2.5rem; 
+            left: 50%; 
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+        
+        .hero-scroll i { 
+            font-size: 2.2rem; 
+            color: #fff;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+        
+        .hero-scroll i:hover {
+            opacity: 1;
+            transform: translateY(5px);
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0) translateX(-50%);}
+            40% {transform: translateY(-20px) translateX(-50%);}
+            60% {transform: translateY(-10px) translateX(-50%);}
+        }
+        
+        /* About Intro Section */
+        .about-intro {
+            background: var(--light-gray);
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about-intro::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 300px;
+            height: 300px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%230066cc" opacity="0.05"><circle cx="50" cy="50" r="40"/></svg>') no-repeat;
+            background-size: contain;
+            z-index: 0;
+        }
+        
+        .about-intro-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-intro h2 {
+            margin-bottom: 2rem;
+            color: var(--dark);
+        }
+        
+        .about-intro p {
+            font-size: 1.2rem;
+            color: var(--text);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+        }
+        
+        /* Bento Grid Section */
+        .bento-grid { 
+            background: #f9fafb; 
+            position: relative; 
+            overflow: hidden; 
+            padding: 6rem 0;
+        }
+        
+        .bento-container {
+            display: grid; 
+            grid-template-columns: repeat(12, 1fr); 
+            gap: 1.5rem; 
+            position: relative;
+        }
+        
+        .bento-box {
+            background: #fff; 
+            border-radius: var(--radius-xl); 
+            padding: 2.5rem;
+            box-shadow: var(--shadow-sm); 
+            border: 1px solid rgba(0,0,0,0.03);
+            overflow: hidden;
+            position: relative; 
+            transition: var(--transition-slow);
+        }
+        
+        .bento-box:hover { 
+            box-shadow: var(--shadow-lg); 
+            transform: translateY(-8px);
+        }
+        
+        .bento-title-box { 
+            grid-column: span 12; 
+            text-align: center; 
+            background: linear-gradient(135deg, var(--primary-light), #fff);
+            border: 1px solid rgba(0,102,204,0.1);
+        }
+        
+        .bento-about-box { 
+            grid-column: span 6; 
+            border-left: 4px solid var(--primary);
+        }
+        
+        .bento-mission-box { 
+            grid-column: span 8; 
+            background: linear-gradient(135deg, var(--primary), var(--accent)); 
+            color: #fff;
+        }
+        
+        .bento-values-box { 
+            grid-column: span 4; 
+            background: var(--dark); 
+            color: #fff;
+        }
+        
+        .bento-team-box { 
+            grid-column: span 12; 
+            background: #fff; 
+        }
+        
+        .bento-icon-circle {
+            width: 60px; 
+            height: 60px; 
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            color: #fff; 
+            font-size: 1.6rem; 
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .values-list { 
+            list-style: none; 
+            padding: 0;
+        }
+        
+        .values-list li { 
+            margin-bottom: 1.8rem; 
+            display: flex; 
+            align-items: flex-start; 
+            gap: 1.2rem;
+        }
+        
+        .values-list i { 
+            color: var(--accent); 
+            font-size: 1.5rem;
+            margin-top: 0.3rem;
+        }
+        
+        .mission-quote {
+            font-style: italic; 
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.1);
+            border-left: 3px solid rgba(255,255,255,0.3);
+            border-radius: var(--radius-sm);
+        }
+        
+        /* Values Section */
+        .values-section {
+            padding: 6rem 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%230066cc" opacity="0.03"><rect x="0" y="0" width="100" height="100"/></svg>');
+            background-size: 200px;
+        }
+        
+        .values-section .container {
+            text-align: center;
+        }
+        
+        .values-section h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .values-section p {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            color: var(--text);
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .value-card {
+            background: #fff;
+            border-radius: var(--radius-lg);
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.03);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .value-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1.5rem;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.8rem;
+            transition: var(--transition);
+        }
+        
+        .value-card:hover .value-icon {
+            background: var(--primary);
+            color: #fff;
+            transform: rotate(15deg) scale(1.1);
+        }
+        
+        .value-card h3 {
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .value-card p {
+            margin: 0;
+            color: var(--text);
+            font-size: 1rem;
+        }
+        
+        /* CTA Section */
+        .cta-section { 
+            background: linear-gradient(135deg, var(--primary), var(--accent)); 
+            color: #fff;
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23ffffff" opacity="0.05"><circle cx="50" cy="50" r="40"/></svg>') no-repeat;
+            background-size: contain;
+            z-index: 0;
+        }
+        
+        .cta-content { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-title { 
+            color: #fff; 
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        
+        .cta-text { 
+            font-size: 1.2rem; 
+            color: rgba(255,255,255,0.9); 
+            margin-bottom: 2.5rem;
+        }
+        
+        .cta-buttons { 
+            display: flex; 
+            gap: 1.5rem; 
+            justify-content: center;
+        }
+        
+        /* Footer */
+        footer { 
+            background: var(--dark); 
+            color: #fff; 
+            padding: 5rem 0 2rem; 
+            position: relative;
+        }
+        
+        .footer-container {
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 3rem; 
+            margin-bottom: 3rem;
+        }
+        
+        .footer-logo { 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: #fff; 
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+        
+        .footer-logo span { 
+            color: var(--accent);
+        }
+        
+        .footer-about p { 
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links { 
+            display: flex; 
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            width: 40px; 
+            height: 40px; 
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%; 
+            color: #fff; 
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+        
+        .social-links a:hover { 
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-links h4 { 
+            color: #fff; 
+            margin-bottom: 1.5rem; 
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .footer-links ul { 
+            list-style: none; 
+            padding: 0;
+        }
+        
+        .footer-links li { 
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a { 
+            color: rgba(255,255,255,0.7);
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+        
+        .footer-links a:hover { 
+            color: #fff;
+            padding-left: 5px;
+        }
+        
+        .copyright { 
+            text-align: center; 
+            padding-top: 2rem; 
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .hero-title { font-size: 2.5rem; }
+        }
+        
+        @media (max-width: 992px) {
+            .bento-about-box, .bento-mission-box, .bento-values-box { 
+                grid-column: span 12;
+            }
+            
+            .hero-title { font-size: 2.2rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            
+            .bento-box { 
+                padding: 2rem;
+            }
+            
+            .section {
+                padding: 4rem 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .desktop-nav { display: none;}
+            .mobile-nav-btn { display: block;}
+            
+            .hero {
+                min-height: 500px;
+                height: 80vh;
+            }
+            
+            .hero-title { 
+                font-size: 2rem;
+                margin-bottom: 1.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+                margin: 0 auto;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container { 
+                padding: 0 15px;
+            }
+            
+            .hero-title { 
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .bento-box {
+                padding: 1.5rem;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .footer-logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo" aria-label="Trinity Medical Courier - Home">
+                    <div class="logo-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div>
+                        Trinity <span>Medical</span>
+                        <span class="logo-tagline">Secure Transport Solutions</span>
+                    </div>
+                </a>
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" aria-current="page">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="quote.html" class="btn btn-primary">Get a Quote</a>
+                </nav>
+                <button class="mobile-nav-btn" id="mobileNavBtn" aria-label="Open mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div style="padding: 0 1.4rem; margin-top: 1.5rem;">
+                <a href="quote.html" class="btn btn-primary btn-block">Get a Quote</a>
+            </div>
+        </div>
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+        <div class="hero-bg">
+            <video autoplay muted loop playsinline poster="h (2).jpg">
+                =
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="hero-title">Precision Medical Logistics</h1>
+            <p class="hero-subtitle">Founded by a former Bristol Myers Squibb manufacturing associate, Trinity Medical Courier brings pharmaceutical industry precision to medical transport solutions.</p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
+                <a href="services.html" class="btn btn-primary btn-lg">Our Services</a>
+            </div>
+            <div class="hero-scroll">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Intro Section -->
+    <section class="section about-intro">
+        <div class="container">
+            <div class="about-intro-content" data-aos="fade-up">
+                <span class="section-title">Our Story</span>
+                <h2>Pharmaceutical Expertise Meets Logistics Excellence</h2>
+                <p>Trinity Medical Courier was born from firsthand experience in pharmaceutical manufacturing, recognizing the critical need for transport services that understand the unique requirements of healthcare logistics.</p>
+                <p>We bridge the gap between clinical precision and reliable delivery, ensuring your medical shipments receive the same care they would in a GMP environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Section -->
+    <section class="section bento-grid" id="about-bento">
+        <div class="container">
+            <div class="bento-container">
+                <div class="bento-box bento-title-box" data-aos="fade-up">
+                    <span class="section-title">Our Difference</span>
+                    <h2>Why Healthcare Providers Trust Trinity</h2>
+                    <p>We combine pharmaceutical manufacturing experience with logistics expertise to deliver unmatched medical transport services.</p>
+                </div>
+                <div class="bento-box bento-about-box" data-aos="fade-right">
+                    <div class="bento-icon-circle"><i class="fas fa-industry"></i></div>
+                    <h3>Pharmaceutical Roots</h3>
+                    <p>Our founder's experience at Bristol Myers Squibb—one of the world's leading biopharmaceutical companies—informs every aspect of our operation. We understand GMP environments, cold chain requirements, and the critical nature of pharmaceutical logistics.</p>
+                    <p>This insider perspective allows us to anticipate needs that traditional courier services might overlook, particularly in handling sensitive materials and maintaining strict compliance.</p>
+                </div>
+                <div class="bento-box bento-mission-box" data-aos="fade-up">
+                    <h3>Our Mission</h3>
+                    <p>To bridge the gap between pharmaceutical-grade precision and medical logistics, ensuring that every specimen, medication, and medical supply is transported with the same care and attention to detail as it would receive in a GMP manufacturing environment.</p>
+                    <div class="mission-quote">"In healthcare logistics, there's no room for error. We treat every delivery as if it's going to our own family."</div>
+                </div>
+                <div class="bento-box bento-values-box" data-aos="fade-up">
+                    <h3>Core Values</h3>
+                    <ul class="values-list">
+                        <li>
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>Compliance First</strong>
+                                <p>Adherence to all regulatory requirements is non-negotiable.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Urgency with Precision</strong>
+                                <p>Fast doesn't mean careless—we move quickly without compromising quality.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-temperature-low"></i>
+                            <div>
+                                <strong>Temperature Integrity</strong>
+                                <p>Proper cold chain management from pickup to delivery.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section values-section">
+        <div class="container">
+            <span class="section-title">OUR VALUES</span>
+            <h2 data-aos="fade-up">The Trinity Difference</h2>
+            <p data-aos="fade-up" data-aos-delay="100">These core principles guide every delivery we make</p>
+            
+            <div class="values-grid">
+                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <p>Every specimen and pharmaceutical product is handled with strict security protocols and chain of custody documentation.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Reliability</h3>
+                    <p>On-time delivery is non-negotiable. We understand that delays can impact patient care and research outcomes.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="value-icon">
+                        <i class="fas fa-temperature-low"></i>
+                    </div>
+                    <h3>Precision</h3>
+                    <p>Temperature-sensitive materials are monitored continuously with real-time tracking and alerts.</p>
+                </div>
+                
+                <div class="value-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="value-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h3>Compliance</h3>
+                    <p>We maintain strict adherence to all healthcare regulations including HIPAA, CLIA, and FDA requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Ready to Experience the Trinity Difference?</h2>
+                <p class="cta-text">Partner with a courier service that understands the pharmaceutical and healthcare industries from the inside out.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+                    <a href="tel:+1234567890" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone-alt" style="margin-right: 8px;"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Trinity <span>Medical</span> Courier</div>
+                    <p>Specializing in secure, compliant medical transport with industry expertise from pharmaceutical manufacturing.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Medical Specimens</a></li>
+                        <li><a href="services.html">Pharmaceuticals</a></li>
+                        <li><a href="services.html">Clinical Trials</a></li>
+                        <li><a href="services.html">Healthcare Logistics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Trinity Medical Courier. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animation library
+        AOS.init({ 
+            duration: 800, 
+            easing: 'ease-in-out', 
+            once: true, 
+            offset: 100,
+            mirror: false
+        });
+
+        // Mobile nav toggle
+        const mobileNavBtn = document.getElementById('mobileNavBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const navOverlay = document.getElementById('navOverlay');
+        
+        mobileNavBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+            mobileNavBtn.innerHTML = mobileNav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        navOverlay.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            mobileNavBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+        
+        document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                navOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+                mobileNavBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Navbar hide/show on scroll
+        let lastScroll = 0;
+        const header = document.getElementById('mainHeader');
+        
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) { 
+                header.classList.remove('hide'); 
+                return; 
+            }
+            
+            if (currentScroll > lastScroll && !header.classList.contains('hide')) {
+                header.classList.add('hide');
+            } else if (currentScroll < lastScroll && header.classList.contains('hide')) {
+                header.classList.remove('hide');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#' || !document.querySelector(targetId)) return;
+                
+                e.preventDefault();
+                
+                const headerHeight = header.offsetHeight;
+                const targetPosition = document.querySelector(targetId).getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                
+                window.scrollTo({ 
+                    top: targetPosition, 
+                    behavior: 'smooth' 
+                });
+            });
+        });
+
+        // Video Feature Play Button
+        const playButton = document.querySelector('.play-button');
+        const featureVideo = document.querySelector('.video-feature video');
+        
+        if (playButton && featureVideo) {
+            playButton.addEventListener('click', () => {
+                if (featureVideo.paused) {
+                    featureVideo.play();
+                    document.querySelector('.video-overlay').style.opacity = '0';
+                    setTimeout(() => {
+                        document.querySelector('.video-overlay').style.display = 'none';
+                    }, 300);
+                } else {
+                    featureVideo.pause();
+                    document.querySelector('.video-overlay').style.display = 'flex';
+                    setTimeout(() => {
+                        document.querySelector('.video-overlay').style.opacity = '1';
+                    }, 10);
+                }
+            });
+            
+            featureVideo.addEventListener('ended', () => {
+                document.querySelector('.video-overlay').style.display = 'flex';
+                setTimeout(() => {
+                    document.querySelector('.video-overlay').style.opacity = '1';
+                }, 10);
+            });
+        }
+    </script>
+</body>
+</html>

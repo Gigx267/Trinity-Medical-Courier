@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote | Trinity Medical Courier | Secure Healthcare Logistics</title>
+    <meta name="description" content="Request a quote from Trinity Medical Courier for reliable, compliant medical transport solutions. Fast, secure, and tailored to your needs.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* --- Modern Color Scheme and Design Optimization --- */
+        :root {
+             --primary: #dc3545; /* Professional blue */
+            --primary-dark: #003d7a;
+            --primary-light: #e6f0ff;
+            --accent: #00a0e1; /* Complementary blue */
+            --dark: #1a1a1a;
+            --dark-light: #2d2d2d;
+            --text: #4a4a4a;
+            --text-light: #ffffff;
+            --text-lighter: #f8f9fa;
+            --border: #e0e0e0;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        *, *::before, *::after { box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: #fff;
+            line-height: 1.6;
+            font-size: 16px;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--dark);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        h1 { font-size: 2.8rem; }
+        h2 { font-size: 2.2rem; }
+        h3 { font-size: 1.7rem; }
+        h4 { font-size: 1.3rem; }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+        a { color: var(--primary); text-decoration: none; transition: var(--transition);}
+        a:hover { color: var(--primary-dark);}
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+        
+        .section-title {
+            display: inline-block; 
+            color: var(--primary); 
+            font-size: 0.9rem; 
+            font-weight: 700;
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            margin-bottom: 1.5rem; 
+            padding: 0.6rem 1.2rem;
+            background: var(--primary-light); 
+            border-radius: 50px;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0; left: 0; width: 100%; z-index: 1000;
+            background: rgba(255,255,255,0.98);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            backdrop-filter: blur(8px);
+        }
+        
+        header.hide { transform: translateY(-100%);}
+        
+        .header-container {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            height: 80px;
+        }
+        
+        .logo {
+            display: flex; 
+            align-items: center; 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: var(--dark);
+        }
+        
+        .logo-icon {
+            width: 40px; 
+            height: 40px; 
+            background: var(--primary);
+            color: #fff; 
+            border-radius: var(--radius-sm);
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            margin-right: 0.8rem; 
+            font-size: 1.3rem; 
+            transition: var(--transition);
+        }
+        
+        .logo:hover .logo-icon { 
+            transform: rotate(15deg); 
+            background: var(--accent); 
+        }
+        
+        .logo span { color: var(--primary);}
+        
+        .logo-tagline { 
+            display: block; 
+            font-size: 0.75rem; 
+            color: var(--text); 
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Navigation */
+        .desktop-nav { display: flex; align-items: center;}
+        
+        .nav-links { 
+            display: flex; 
+            list-style: none; 
+            margin-right: 2rem;
+            gap: 1.5rem;
+        }
+        
+        .nav-links a { 
+            color: var(--dark); 
+            font-weight: 500; 
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: ""; 
+            display: block; 
+            height: 2px; 
+            width: 0;
+            background: var(--primary); 
+            transition: var(--transition);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .nav-links a:hover::after { width: 100%;}
+        
+        .btn { 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+            padding: 0.8rem 2.2rem; 
+            font-weight: 600; 
+            border-radius: var(--radius-md);
+            border: none; 
+            cursor: pointer; 
+            text-align: center; 
+            transition: var(--transition);
+            background: none;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary); 
+            color: #fff; 
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .btn-primary:hover { 
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-outline {
+            color: var(--primary); 
+            border: 2px solid var(--primary); 
+            background: transparent;
+        }
+        
+        .btn-outline:hover { 
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+        
+        .btn-lg { 
+            padding: 1.1rem 2.8rem; 
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        /* Mobile Nav */
+        .mobile-nav-btn {
+            display: none; 
+            background: none; 
+            border: none; 
+            color: var(--dark); 
+            font-size: 1.7rem; 
+            cursor: pointer;
+            z-index: 1002;
+        }
+        
+        .mobile-nav { 
+            position: fixed; 
+            top: 0; 
+            right: -100%; 
+            width: 300px; 
+            height: 100vh;
+            background: #fff; 
+            box-shadow: -5px 0 25px rgba(0,0,0,0.1); 
+            z-index: 1001;
+            transition: right .4s cubic-bezier(0.16, 1, 0.3, 1); 
+            padding: 6rem 2rem 3rem;
+            overflow-y: auto;
+        }
+        
+        .mobile-nav.active { right: 0;}
+        
+        .mobile-nav-links { 
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .mobile-nav-links a { 
+            color: var(--dark); 
+            font-weight: 600; 
+            font-size: 1.1rem; 
+            display: block;
+            padding: 0.5rem 0;
+        }
+        
+        .mobile-nav-links a:hover { color: var(--primary);}
+        
+        .nav-overlay {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background: rgba(0,0,0,0.5); 
+            z-index: 1000;
+            opacity: 0; 
+            visibility: hidden; 
+            transition: var(--transition);
+            backdrop-filter: blur(3px);
+        }
+        
+        .nav-overlay.active { opacity: 1; visibility: visible;}
+        
+        /* Hero Section */
+        .hero {
+            height: 60vh; 
+            min-height: 500px; 
+            display: flex; 
+            align-items: center; 
+            color: white;
+            text-align: center; 
+            position: relative; 
+            overflow: hidden; 
+            padding-top: 80px;
+        }
+        
+        .hero-bg {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            z-index: -2;
+        }
+        
+        .hero-bg img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+        }
+        
+        .hero-overlay {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,102,204, 0.85) 0%, rgba(0,160,225, 0.75) 100%);
+            z-index: -1;
+        }
+        
+        .hero-content { 
+            position: relative; 
+            max-width: 800px; 
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero-title { 
+            font-size: 2.8rem; 
+            color: #fff; 
+            margin-bottom: 1.5rem; 
+            line-height: 1.1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .hero-subtitle { 
+            font-size: 1.3rem; 
+            font-weight: 400; 
+            color: rgba(255,255,255,0.9); 
+            margin-bottom: 2.5rem;
+        }
+        
+        /* Quote Section */
+        .quote-section {
+            background: var(--light-gray);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .quote-section::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%230066cc" opacity="0.05"><circle cx="50" cy="50" r="40"/></svg>') no-repeat;
+            background-size: contain;
+            z-index: 0;
+        }
+        
+        .quote-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: var(--radius-xl);
+            padding: 3rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.03);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .quote-form h3 {
+            margin-bottom: 2rem;
+            color: var(--primary);
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0,102,204,0.1);
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        
+        /* Benefits Section */
+        .benefits-section {
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefits-section::before {
+            content: "";
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%2300cc99" opacity="0.05"><circle cx="50" cy="50" r="40"/></svg>') no-repeat;
+            background-size: contain;
+            z-index: 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .benefit-card {
+            background: var(--light-gray);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.03);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1.5rem;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.8rem;
+            transition: var(--transition);
+        }
+        
+        .benefit-card:hover .benefit-icon {
+            background: var(--primary);
+            color: #fff;
+            transform: rotate(15deg) scale(1.1);
+        }
+        
+        .benefit-card h4 {
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .benefit-card p {
+            margin: 0;
+            color: var(--text);
+            font-size: 1rem;
+        }
+        
+        /* Footer */
+        footer { 
+            background: var(--dark); 
+            color: #fff; 
+            padding: 5rem 0 2rem; 
+            position: relative;
+        }
+        
+        .footer-container {
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 3rem; 
+            margin-bottom: 3rem;
+        }
+        
+        .footer-logo { 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: #fff; 
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+        
+        .footer-logo span { 
+            color: var(--accent);
+        }
+        
+        .footer-about p { 
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links { 
+            display: flex; 
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            width: 40px; 
+            height: 40px; 
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%; 
+            color: #fff; 
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+        
+        .social-links a:hover { 
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-links h4 { 
+            color: #fff; 
+            margin-bottom: 1.5rem; 
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .footer-links ul { 
+            list-style: none; 
+            padding: 0;
+        }
+        
+        .footer-links li { 
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a { 
+            color: rgba(255,255,255,0.7);
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+        
+        .footer-links a:hover { 
+            color: #fff;
+            padding-left: 5px;
+        }
+        
+        .copyright { 
+            text-align: center; 
+            padding-top: 2rem; 
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .hero-title { font-size: 2.5rem; }
+        }
+        
+        @media (max-width: 992px) {
+            .hero-title { font-size: 2.2rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .section {
+                padding: 4rem 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .desktop-nav { display: none;}
+            .mobile-nav-btn { display: block;}
+            
+            .hero {
+                min-height: 450px;
+                height: 50vh;
+            }
+            
+            .hero-title { 
+                font-size: 2rem;
+                margin-bottom: 1.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .quote-container {
+                padding: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container { 
+                padding: 0 15px;
+            }
+            
+            .hero-title { 
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .quote-container {
+                padding: 1.5rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .footer-logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="mainHeader">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo" aria-label="Trinity Medical Courier - Home">
+                    <div class="logo-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div>
+                        Trinity <span>Medical</span>
+                        <span class="logo-tagline">Secure Transport Solutions</span>
+                    </div>
+                </a>
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="quote.html" class="btn btn-primary" aria-current="page">Get a Quote</a>
+                </nav>
+                <button class="mobile-nav-btn" id="mobileNavBtn" aria-label="Open mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div style="padding: 0 1.4rem; margin-top: 1.5rem;">
+                <a href="quote.html" class="btn btn-primary btn-block" aria-current="page">Get a Quote</a>
+            </div>
+        </div>
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="quote-hero.jpg" alt="Medical courier professional handling secure package">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="hero-title">Get a Custom Quote</h1>
+            <p class="hero-subtitle">Complete the form below, and our team will provide a tailored solution for your medical transport needs.</p>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="section quote-section">
+        <div class="container">
+            <span class="section-title">REQUEST A QUOTE</span>
+            <h2 data-aos="fade-up">Tell Us About Your Needs</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Fill out the form below, and we'll respond with a competitive quote within 24 hours.</p>
+            
+            <div class="quote-container" data-aos="fade-up" data-aos-delay="200">
+                <form class="quote-form" id="quoteForm">
+                    <h3>Quote Request Form</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Needed*</label>
+                        <select id="service" class="form-control" required>
+                            <option value="">Select a service</option>
+                            <option value="medical-specimens">Medical Specimens</option>
+                            <option value="pharmaceuticals">Pharmaceuticals</option>
+                            <option value="clinical-trials">Clinical Trials</option>
+                            <option value="lab-samples">Lab Samples</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="urgency">Urgency Level*</label>
+                        <select id="urgency" class="form-control" required>
+                            <option value="">Select urgency</option>
+                            <option value="standard">Standard (1-2 days)</option>
+                            <option value="expedited">Expedited (Same day)</option>
+                            <option value="emergency">Emergency (Within hours)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="details">Additional Details*</label>
+                        <textarea id="details" class="form-control" placeholder="Describe your shipment (size, temperature requirements, special handling, etc.)" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits-section">
+        <div class="container">
+            <span class="section-title">WHY CHOOSE US</span>
+            <h2 data-aos="fade-up">The Trinity Advantage</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Here's what sets us apart in medical logistics</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Compliance Guaranteed</h4>
+                    <p>HIPAA, CLIA, and FDA-compliant handling for all medical shipments.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-temperature-low"></i>
+                    </div>
+                    <h4>Temperature Control</h4>
+                    <p>Precision cold chain management with real-time monitoring.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>24/7 Availability</h4>
+                    <p>Emergency services available anytime, including weekends.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Nationwide Coverage</h4>
+                    <p>Reliable service across all major cities and regions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Trinity <span>Medical</span> Courier</div>
+                    <p>Specializing in secure, compliant medical transport with industry expertise from pharmaceutical manufacturing.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Medical Specimens</a></li>
+                        <li><a href="services.html">Pharmaceuticals</a></li>
+                        <li><a href="services.html">Clinical Trials</a></li>
+                        <li><a href="services.html">Healthcare Logistics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Trinity Medical Courier. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animation library
+        AOS.init({ 
+            duration: 800, 
+            easing: 'ease-in-out', 
+            once: true, 
+            offset: 100,
+            mirror: false
+        });
+
+        // Mobile nav toggle
+        const mobileNavBtn = document.getElementById('mobileNavBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const navOverlay = document.getElementById('navOverlay');
+        
+        mobileNavBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+            mobileNavBtn.innerHTML = mobileNav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        navOverlay.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            mobileNavBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+        
+        document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                navOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+                mobileNavBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Navbar hide/show on scroll
+        let lastScroll = 0;
+        const header = document.getElementById('mainHeader');
+        
+        window.addEventListener('scroll', function() {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) { 
+                header.classList.remove('hide'); 
+                return; 
+            }
+            
+            if (currentScroll > lastScroll && !header.classList.contains('hide')) {
+                header.classList.add('hide');
+            } else if (currentScroll < lastScroll && header.classList.contains('hide')) {
+                header.classList.remove('hide');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Form submission
+        const quoteForm = document.getElementById('quoteForm');
+        
+        if (quoteForm) {
+            quoteForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Form validation
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const service = document.getElementById('service').value;
+                const urgency = document.getElementById('urgency').value;
+                const details = document.getElementById('details').value;
+                
+                if (!name || !email || !phone || !service || !urgency || !details) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+                
+                // Simulate form submission
+                alert('Thank you for your request! We will provide your quote within 24 hours.');
+                quoteForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
